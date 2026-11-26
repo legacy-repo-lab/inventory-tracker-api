@@ -1,0 +1,18 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2020": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+    "no-unused-vars": "error",
+    "no-var": "error",
+    "eqeqeq": ["error", "always"],
+    "semi": ["warn", "always"]
+  }
+}
