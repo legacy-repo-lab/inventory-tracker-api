@@ -15,7 +15,7 @@ function slugifyName(name) {
 }
 
 function generateSku() {
-  const suffix = Math.floor(Math.random() * 120000000).toString(36).toUpperCase();
+  const suffix = Math.floor(Math.random() * 120000000).toString(36).toUpperCase().padStart(6, '0').slice(-6);
   return 'SKU-' + suffix;
 }
 

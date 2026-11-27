@@ -43,14 +43,14 @@ async function syncSupplierStock(id) {
 
   const payload = await response.json();
 
-  setTimeout(() => {
+
     db.auditLog.push({
       type: 'SUPPLIER_SYNC',
       supplierId: supplier.id,
       count: Array.isArray(payload.items) ? payload.items.length : 0,
       timestamp: new Date().toISOString()
     });
-  }, 40);
+
 
   return {
     supplierId: supplier.id,
