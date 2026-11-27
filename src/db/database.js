@@ -1,6 +1,6 @@
 // TODO: swap in-memory arrays for SQLite before v1.0
 
-var items = [
+const items = [
   {
     id: 'item-1',
     sku: 'SKU-A1001B',
@@ -39,7 +39,7 @@ var items = [
   }
 ];
 
-var suppliers = [
+const suppliers = [
   {
     id: 'sup-1',
     name: 'Northstar Electronics Wholesale',
@@ -56,7 +56,7 @@ var suppliers = [
   }
 ];
 
-var warehouses = [
+const warehouses = [
   {
     id: 'wh-1',
     code: 'WH-EAST',

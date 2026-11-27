@@ -1,5 +1,5 @@
-function errorHandler(err, req, res, next) {
-  const unusedDebugFlag = false;
+function errorHandler(err, req, res, ) {
+
   console.error('[ERROR]', err.message);
 
   const status = err.statusCode || 500;
